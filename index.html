@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>MusicVibes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+        <img src="img/logo.png" class="logo" alt="">
+        <h1>Music<span>Vibes</span></h1>
+    </div>
+        <nav>
+            <ul>
+            <li><a href="#index.html"><i class="fas fa-home"></i></a></li>
+            <li><a href="#artist"><i class="fas fa-music"></i></a></li>
+            <li><a href="#contato"><i class="fas fa-envelope"></i></a></li>
+            </ul>
+        </nav>
+
+        <div class="espace-container">
+            <div class="espace"></div>
+            <div class="espace"></div>
+        </div>
+
+        <form class="search-form" action="#" method="get">
+            <input type="text" id="artist-search" placeholder="Pesquisar artistas...">
+            <button type="submit"><img src="img/icon-lupa-removebg-preview.png"></button>
+        </form>
+    </header>
+
+    <main>
+        <section class="content">
+            <div class="image-container">
+                <img src="img/principalSite-removebg-preview.png">
+            </div>
+
+            <div class="recommendations" id="music">
+                <div class="card">
+                    <img src="img/album - Bruno Mars.jpg" alt="Álbum 1" class="album-cover">
+                    <video class="video" src="songs/Bruno Mars - Just The Way You Are (Official Music Video).mp4" controls style="display: none;">
+                        Seu navegador não suporta a tag de vídeo.
+                    </video>
+                    <button class="close-btn" style="display: none;">X</button>
+                    <h3>Just the Way You Are</h3>
+                    <p id="paragrafo">Bruno Mars</p>
+                </div>
+            
+                <div class="card">
+                    <img src="img/album - Rihanna.jpg" alt="Álbum 2" class="album-cover">
+                    <video class="video" src="songs/Rihanna - Diamonds.mp4" controls style="display: none;">
+                        Seu navegador não suporta a tag de vídeo.
+                    </video>
+                    <button class="close-btn" style="display: none;">X</button>
+                    <h3>Diamonds</h3>
+                    <p id="paragrafo">Rihanna</p>
+                </div>
+
+                <div class="card">
+                    <img src="img/album - Billie Ellish.jpg" alt="Álbum 3" class="album-cover">
+                    <video class="video" src="songs/Billie Eilish - bad guy.mp4" controls style="display: none;">
+                        Seu navegador não suporta a tag de vídeo.
+                    </video>
+                    <button class="close-btn" style="display: none;">X</button>
+                    <h3>Bad Guy</h3>
+                    <p id="paragrafo">Billie Eilish</p>
+                </div>
+            </div>
+             
+        </section>
+
+        <div id="modal" class="hidden">
+            <button id="close-modal">X</button>
+            <video id="video-player" controls>
+                <source id="video-source" src="" type="video/mp4">
+            </video>
+            <audio id="audio-player" controls>
+                <source id="audio-source" src="" type="audio/mpeg">
+            </audio>
+            <h3 id="song-title"></h3>
+        </div>
+    </main>
+    
+    <section class="artists" id="artist">
+        <h2>Artistas em <span>Destaque</span></h2>
+        <div class="artist-container">
+            <div class="artist-item">
+                <img src="img/bruno mars.jpg" alt="Bruno Mars">
+                <div class="artist-info">
+                    <h3>Bruno Mars</h3>
+                    <p>Ícone do pop e R&B, famoso por hits como "Uptown Funk" e "Just the Way You Are".</p>
+                    <a href="#music">Ouça agora</a>
+                </div>
+            </div>
+            <div class="artist-item">
+                <img src="img/rihanna.jpg" alt="Rihanna">
+                <div class="artist-info">
+                    <h3>Rihanna</h3>
+                    <p>Artista ícone do pop e da moda, conhecida por sucessos como "Umbrella" e "Diamonds".</p>
+                    <a href="#music">Ouça agora</a>
+                </div>
+            </div>
+            <div class="artist-item">
+                <img src="img/billie ellish.jpg" alt="Billie Eilish">
+                <div class="artist-info">
+                    <h3>Billie Eilish</h3>
+                    <p>Conhecida por suas músicas inovadoras e estilo único. Ouça seus sucessos como "Bad Guy".</p>
+                    <a href="#music">Ouça agora</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="contact" id="contato">
+        <h2>Entre em <span>Contato</span></h2>
+        <form action="#" method="post">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+        
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+        
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Digite sua mensagem" required></textarea>
+        
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>2024 &copy; MusicVibes</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
