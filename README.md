@@ -2,6 +2,8 @@
 Descrição do Projeto
 MusicVibes é um site dedicado a apresentar artistas e suas músicas de forma interativa e visualmente atraente. O site permite que os usuários descubram novos artistas, assistam a videoclipes e se conectem com suas músicas favoritas.
 
+## Link de Acesso: https://music-vibes-ar.vercel.app/
+
 ## Estrutura do Site
 O site é composto pelas seguintes seções:
 
@@ -10,6 +12,7 @@ Cabeçalho (Header):
 Contém o logotipo do MusicVibes e o título.
 Navegação com links para as principais seções do site (Home, Artistas, Contato).
 Formulário de pesquisa para buscar artistas por nome.
+
 Conteúdo Principal (Main):
 
 Imagem de Destaque: Uma imagem principal que representa o site.
